@@ -21,6 +21,9 @@ with `req.user` supplied with `{uuid: "anonymous_<uuid>"}`.
 
     passport.use(new AnonymIdStrategy());
 
+If you pass a verify function to the strategy it will be supplied with `req` and the generated `uuid`.
+Then use it as any other strategy.
+
 #### Authenticate Requests
 
 Use `passport.authenticate()`, specifying the `'anonymId'` strategy, to
