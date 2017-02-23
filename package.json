@@ -1,0 +1,44 @@
+{
+  "name": "passport-anonym-uuid",
+  "version": "1.0.1",
+  "description": "Anonymous authentication strategy for Passport that supply an uuid.",
+  "keywords": [
+    "passport",
+    "authentication",
+    "anonymous",
+    "uuid"
+  ],
+  "author": {
+    "name": "Honoré Nintunze",
+    "email": "nash403@outlook.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nash403/passport-anonym-uuid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nash403/passport-anonym-uuid/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "node-uuid": "^1.4.7",
+    "passport-strategy": "1.x.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x",
+    "chai-passport-strategy": "0.1.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
