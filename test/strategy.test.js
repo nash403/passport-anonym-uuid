@@ -17,7 +17,7 @@ describe('Strategy', function() {
     var user;
     
     before(function(done) {
-      chai.passport(strategy)
+      chai.passport.use(strategy)
         .success(function(u, i) {
           user = u;
           done(null,u);
@@ -26,7 +26,7 @@ describe('Strategy', function() {
     });
     
     it('should call success', function() {
-      expect(user).to.be.an.object;
+      expect(user).to.be.an('object');
     });
     
     it('should supply req.user with uuid field', function() {
