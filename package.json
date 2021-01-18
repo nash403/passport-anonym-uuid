@@ -27,13 +27,13 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "node-uuid": "^1.4.7",
-    "passport-strategy": "1.x.x"
+    "passport-strategy": "1.x.x",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
     "chai": "1.x.x",
-    "chai-passport-strategy": "0.1.x"
+    "chai-passport-strategy": "0.1.x",
+    "mocha": "1.x.x"
   },
   "engines": {
     "node": ">= 0.4.0"
